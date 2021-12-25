@@ -1,4 +1,4 @@
-public class arithemetic {
+public class arithmetic {
 
     public static void main(String[] args) {
         System.out.println(addMethod(12, 25));
@@ -23,10 +23,13 @@ public class arithemetic {
     }
     static boolean checkMethod(int a){
         if(a % 3 == 0) {
+            System.out.println("you entered " + a + " and that is true");
             return true;
         } else{
+            System.out.println("you entered " + a + " and that is false");
             return false;
         }
+
     }
 
 }
