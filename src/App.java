@@ -20,13 +20,19 @@ public class App {
                 String newString = string.replace("a", "");
                 System.out.println("your new string is " + newString );
             }
+
+
            
            
 
         }
-    
+
+
+
     }
+
 
     
     
 }
+
