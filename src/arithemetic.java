@@ -4,6 +4,7 @@ public class arithemetic {
         System.out.println(addMethod(12, 25));
         System.out.println(subtractMethod(20,10));
         System.out.println(multiplyMethod(3, 6));
+        System.out.println(checkMethod(24));
     }
 
      static int addMethod(int a, int b){
@@ -17,10 +18,10 @@ public class arithemetic {
         return a-b;
     }
     static int multiplyMethod(int a,int b){
-        System.out.print("You entered " + a + " * " + b);
+        System.out.print("You entered " + a + " * " + b  +" = ");
         return a*b;
     }
-    static boolean checkMethod(boolean a){
+    static boolean checkMethod(int a){
         if(a % 3 == 0) {
             return true;
         } else{
