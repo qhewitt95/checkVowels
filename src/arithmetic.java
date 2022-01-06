@@ -29,6 +29,7 @@ public class arithmetic {
             System.out.println("you entered " + a + " and that is false");
             return false;
         }
+    }
 //Given a number n, write a method that sums all multiples of three and five up to n (inclusive).
         public Integer sum(Integer n) {
             Integer sum = 0;
@@ -38,7 +39,17 @@ public class arithmetic {
                 }
             }
             return sum;
-
     }
-
+    //The parameter weekday is true if it is a weekday, and the parameter vacation is true if we are on vacation. 
+   // We sleep in if it is not a weekday or we're on vacation. Return true if we sleep in.
+    //sleepIn(false, false) → true
+   // sleepIn(true, false) → false
+    //sleepIn(false, true) → true
+    public boolean sleepIn(boolean weekday, boolean vacation) {
+        if (!weekday || vacation) {
+          return true;
+        }
+        return false;
+      }
+      
 }
