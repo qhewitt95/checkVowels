@@ -84,5 +84,17 @@ return result;
     return count;
 }
 
-
+public  class  Solution {
+    /**
+   * @param T1, T2: The roots of binary tree.
+   * @return: True if T2 is a subtree of T1, or false.
+   */
+      public static boolean is_Subtree(TreeNode T1, TreeNode T2) {
+      if (T2 == null) return true;
+      if (T1 == null) return false;
+      if (is_Same(T1, T2)) return true;
+      if (is_Subtree(T1.left, T2) || is_Subtree(T1.right, T2)) return true;
+      return false;
+  }
+}
 }
