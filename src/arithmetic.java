@@ -94,7 +94,7 @@ public  class  Solution {
       if (T1 == null) return false;
       if (is_Same(T1, T2)) return true;
       if (is_Subtree(T1.left, T2) || is_Subtree(T1.right, T2)) return true;
-      if()
+
 
       if()
       return false;
@@ -109,4 +109,13 @@ if (n == 1) {
     return fibonacci(n - 1) + fibonacci(n - 2);
 }
 }
+
+public int bunnyEars(int bunnies) {
+    // Base case: if bunnies==0, just return 0.
+    if (bunnies == 0) return 0;
+    
+    // Recursive case: otherwise, make a recursive call with bunnies-1
+    // (towards the base case), and fix up what it returns.
+    return 2 + bunnyEars(bunnies-1);
+  
 }
