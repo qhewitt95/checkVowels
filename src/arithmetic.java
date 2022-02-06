@@ -108,8 +108,6 @@ if (n == 1) {
 } else {
     return fibonacci(n - 1) + fibonacci(n - 2);
 }
-}
-
 public int bunnyEars(int bunnies) {
     // Base case: if bunnies==0, just return 0.
     if (bunnies == 0) return 0;
@@ -119,3 +117,15 @@ public int bunnyEars(int bunnies) {
     return 2 + bunnyEars(bunnies-1);
   
 }
+public Integer maximum(Integer[] list) {
+int maximum = list[0];
+for (int i : list) {
+    if (i > maximum) {
+        maximum = i;
+    }
+}
+return maximum;
+
+}
+
+
