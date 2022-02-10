@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 import javax.sound.sampled.SourceDataLine;
 
 public class arithmetic {
@@ -134,19 +136,37 @@ return maximum;
 
 String backpack[] = {"Shotgun", "Assualt Rifle", "Sniper"};
 String zombies[] = {"Close-range zombie", "Mid-range zombie", "Long-range zombie"};
+int numbersZombiesHATE[] = {4, 64, 2, 80, 120};
+
+System.out.println(numbersZombiesHATE[6]);
+
 System.out.println("Backpack Items");
 System.out.println(backpack[0]);
 System.out.println(backpack[1]);
 System.out.println(backpack[2]);
 
 System.out.println("Theses are the zombies!");
-System.out.println(zombies[0]);
-System.out.println(zombies[0]);
-System.out.println(zombies[0]);
+System.out.println(zombies[1]);
+System.out.println(zombies[2]);
+System.out.println(zombies[3]);
 
 System.out.println(backpack[2]);
 
-
+public static int count_Words(String str)
+    {
+       int count = 0;
+        if (!(" ".equals(str.substring(0, 1))) || !(" ".equals(str.substring(str.length() - 2))))
+        {
+            for (int i = 0; i < str.length(); i++)
+            {
+                if (str.charAt(i) == ' ')
+                {
+                    count++;
+                }
+            }
+            count = count + 1; 
+        }
+        return count; // returns 0 if string starts or ends with space " ".
 }
 
 
