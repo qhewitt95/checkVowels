@@ -168,5 +168,21 @@ public static int count_Words(String str)
         }
         return count; // returns 0 if string starts or ends with space " ".
 }
+public boolean aIsBigger(int a, int b) {
+    if (a > b && (a - b) >= 2) {
+      return true;
+    }
+  
+    return false;
+  }
+  Alternately it can be done with an if/else structure like this:
+  
+  public boolean aIsBigger(int a, int b) {
+    if (a > b && (a - b) >= 2) {
+      return true;
+    } else {
+      return false;
+    }
+  }
 
 
